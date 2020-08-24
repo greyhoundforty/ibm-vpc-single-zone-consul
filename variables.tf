@@ -1,7 +1,7 @@
 variable "resource_group" {
   description = "Name of the Resource group used for deploying VPC resources."
   type        = string
-  default     = ""
+  default     = "CDE"
 }
 
 variable "vpc_region" {
@@ -13,7 +13,7 @@ variable "vpc_region" {
 variable "vpc_name" {
   description = "Name of VPC. Also used as a tag on all resources being deployed."
   type        = string
-  default     = ""
+  default     = "rt-prod-vpc"
 }
 
 variable "ssh_key_name" {
