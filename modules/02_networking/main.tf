@@ -5,7 +5,7 @@ resource "ibm_is_public_gateway" "z1_gateway" {
 }
 
 resource "ibm_is_subnet" "edge_subnet" {
-  name                     = "z1-${var.vpc_name}-edge-net"
+  name                     = "z1-prod-edge-net"
   resource_group           = data.ibm_resource_group.rg.id
   vpc                      = var.vpc_id
   zone                     = data.ibm_is_zones.regional_zones.zones[0]
@@ -14,7 +14,7 @@ resource "ibm_is_subnet" "edge_subnet" {
 }
 
 resource "ibm_is_subnet" "internal_subnet" {
-  name                     = "z1-${var.vpc_name}-internal-net"
+  name                     = "z1-prod-internal-net"
   resource_group           = data.ibm_resource_group.rg.id
   vpc                      = var.vpc_id
   zone                     = data.ibm_is_zones.regional_zones.zones[0]
