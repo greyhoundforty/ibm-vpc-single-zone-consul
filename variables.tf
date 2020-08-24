@@ -19,6 +19,6 @@ variable "vpc_name" {
 variable "ssh_key_name" {
   description = "Name of SSH Key that will be added to compute nodes."
   type        = string
-  default     = ""
+  default     = "hyperion-us-south"
 }
 
