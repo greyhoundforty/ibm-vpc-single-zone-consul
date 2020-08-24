@@ -11,4 +11,5 @@ module "networking" {
   vpc_id         = module.vpc.id
   resource_group = var.resource_group
   zone           = module.vpc.zone1
+  region         = var.vpc_region
 }

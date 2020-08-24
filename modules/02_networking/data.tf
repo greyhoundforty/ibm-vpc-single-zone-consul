@@ -3,5 +3,5 @@ data "ibm_resource_group" "rg" {
 }
 
 data "ibm_is_zones" "regional_zones" {
-  region = var.vpc_region
+  region = var.region
 }

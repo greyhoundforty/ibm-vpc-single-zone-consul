@@ -4,17 +4,20 @@ variable "resource_group" {
   default     = ""
 }
 
-variable "vpc_region" {
-  description = "description"
-  default     = "value"
+variable "region" {
+  description = "VPC Region where resources will be deployed."
+  type        = string
+  default     = ""
 }
 
 variable "vpc_id" {
-  description = "description"
+  description = "ID of the VPC where networking resources will be deployed."
+  type        = string
   default     = ""
 }
 
 variable "zone" {
   description = "VPC Zone where networking resources will be deployed."
+  type        = string
   default     = ""
 }
